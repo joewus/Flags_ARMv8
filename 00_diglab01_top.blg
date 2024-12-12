@@ -1,0 +1,17 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is '00_diglab01_top.blg'
+[222] biber-MSWIN64:340> INFO - === 
+[269] Biber.pm:420> INFO - Reading '00_diglab01_top.bcf'
+[404] Biber.pm:994> INFO - Found 3 citekeys in bib section 0
+[421] Biber.pm:4463> INFO - Processing section 0
+[434] Biber.pm:4654> INFO - Looking for bibtex file './as_literature.bib' for section 0
+[490] bibtex.pm:1713> INFO - LaTeX decoding ...
+[521] bibtex.pm:1519> INFO - Found BibTeX data source './as_literature.bib'
+[581] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[581] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[581] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[581] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[590] bbl.pm:676> INFO - Writing '00_diglab01_top.bbl' with encoding 'UTF-8'
+[595] bbl.pm:779> INFO - Output to 00_diglab01_top.bbl
+[595] Biber.pm:131> WARN - legacy year field 'Accessed: 2024' in entry 'arm_load_store' is not an integer - this will probably not sort properly.
+[595] Biber.pm:133> INFO - WARNINGS: 1

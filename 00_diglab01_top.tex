@@ -1,0 +1,113 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Englisch
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,12pt]{book} % 12 pts
+\usepackage{enumitem}
+\usepackage[english]{babel}
+\selectlanguage{english}
+\usepackage{listings}
+\usepackage{xcolor}  % for coloring the syntax
+\usepackage{setspace}
+\setstretch{1.5}
+\usepackage[margin=1in]{geometry}
+
+
+% Define ARM assembly as a custom language
+\lstdefinelanguage{ARMAssembler}{
+  morekeywords={MOV, ADD, SUB, STR, LDR},    % Add more ARM instructions as needed
+  sensitive=true,                            % Case sensitive
+  morecomment=[l]{//},                       % Line comment style
+  morecomment=[s]{/*}{*/},                   % Block comment style
+  morestring=[b]",                           % Strings in quotes
+}
+
+% Customize the appearance of the code (optional)
+\lstset{
+  basicstyle=\ttfamily,       % Typewriter font for code
+  keywordstyle=\color{blue},  % Color for keywords
+  commentstyle=\color{gray},  % Color for comments
+  stringstyle=\color{red},    % Color for strings
+  numbers=left,               % Line numbers on the left
+  numberstyle=\tiny,          % Style for line numbers
+  stepnumber=1,               % Step for line numbers
+  numbersep=5pt,              % Distance between code and line numbers
+  breaklines=true,            % Automatically wrap long lines
+  captionpos=b,               % Position of the caption (bottom)
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deutsch
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\documentclass[a4paper,12pt]{book} 
+%\usepackage[german,ngerman]{babel} %Cha6pter -> Kapitel
+%\usepackage[T1]{fontenc}           %Umlaute
+%\selectlanguage{ngerman}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Umgebung 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{./latex_all_asheader_en}
+\input{./latex_all_makros}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Table of content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{tocdepth}{2}    % How many levels will be seen in ToC.
+\setcounter{secnumdepth}{2} % How many levels will have a number.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Spacing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Don't forget the spacing
+
+ %%%%%%%%%%%%%%%%%%%%%%%%
+ % Literatur: biber
+ %%%%%%%%%%%%%%%%%%%%%%%%
+% \usepackage[normalem]{ulem}
+\usepackage[backend=biber, 
+                     style=ieee,
+                     natbib=true,
+                     hyperref=true,
+                     maxnames=4]{biblatex}
+\addbibresource{./as_literature.bib} %% Einbinden der bib-Datei
+\DeclareBibliographyCategory{cited}
+%\DeclareDelimFormat{nameyeardelim}{\addcomma\space}
+\AtEveryCitekey{\addtocategory{cited}{\thefield{entrykey}}}
+
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Titel, author, date
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ifthenelse{\equal{\deutsch}{false}}
+{\title{Scientific Protocol: STR/LDR ARMv8}}
+{\title{Wissenschaftlicher Bericht: Logischer Entwurf mit Mintermen oder Maxtermen}}
+\author{Name \\ Owusu Kwabena Joseph  \\ Student ID \\15542936}
+\date{\today}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Titelpage and table of content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagenumbering{Alph}
+\begin{titlepage}
+  \maketitle
+  \thispagestyle{empty}
+\end{titlepage}
+\pagenumbering{arabic}
+%\tableofcontents
+\thispagestyle{empty}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Set the chapter counter and relate the
+% equation numbers to the chapters
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{chapter}{0}
+\numberwithin{equation}{section}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Don't forget the spacing
+\input{./00_berichte_all}
+\printbibliography
+\end{document}

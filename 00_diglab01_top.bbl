@@ -1,0 +1,117 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{patterson2016}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=95486d328725c1c6a933929c9442fe2a}{%
+           family={Patterson},
+           familyi={P\bibinitperiod},
+           given={David\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=4a72d9e0de431dadafab463df2ea7b0f}{%
+           family={Hennessy},
+           familyi={H\bibinitperiod},
+           given={John\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Morgan Kaufmann}%
+      }
+      \strng{namehash}{80dcd96d4af78aec55cda074050a4718}
+      \strng{fullhash}{80dcd96d4af78aec55cda074050a4718}
+      \strng{fullhashraw}{80dcd96d4af78aec55cda074050a4718}
+      \strng{bibnamehash}{80dcd96d4af78aec55cda074050a4718}
+      \strng{authorbibnamehash}{80dcd96d4af78aec55cda074050a4718}
+      \strng{authornamehash}{80dcd96d4af78aec55cda074050a4718}
+      \strng{authorfullhash}{80dcd96d4af78aec55cda074050a4718}
+      \strng{authorfullhashraw}{80dcd96d4af78aec55cda074050a4718}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{The Morgan Kaufmann Series in Computer Architecture and Design}
+      \field{title}{Computer Organization and Design: The Hardware Software Interface, ARM Edition}
+      \field{year}{2016}
+    \endentry
+    \entry{comp_tech_script}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=23152a012a3690bafbe0324f9ccf65e1}{%
+           family={Siggelkow},
+           familyi={S\bibinitperiod},
+           given={Prof.\bibnamedelimi Dr.-Ing.\bibnamedelimi A.},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinithyphendelim I\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{23152a012a3690bafbe0324f9ccf65e1}
+      \strng{fullhash}{23152a012a3690bafbe0324f9ccf65e1}
+      \strng{fullhashraw}{23152a012a3690bafbe0324f9ccf65e1}
+      \strng{bibnamehash}{23152a012a3690bafbe0324f9ccf65e1}
+      \strng{authorbibnamehash}{23152a012a3690bafbe0324f9ccf65e1}
+      \strng{authornamehash}{23152a012a3690bafbe0324f9ccf65e1}
+      \strng{authorfullhash}{23152a012a3690bafbe0324f9ccf65e1}
+      \strng{authorfullhashraw}{23152a012a3690bafbe0324f9ccf65e1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-10-16}
+      \field{title}{Computer Technology Lab Script}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://elearning.rwu.de/pluginfile.php/250305/mod_resource/content/3/00_rechlab_top.pdf
+      \endverb
+      \verb{url}
+      \verb https://elearning.rwu.de/pluginfile.php/250305/mod_resource/content/3/00_rechlab_top.pdf
+      \endverb
+    \endentry
+    \entry{arm_load_store}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=5a77bfd8add10e14ceb8c187544bfc96}{%
+           family={Developer},
+           familyi={D\bibinitperiod},
+           given={ARM},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{5a77bfd8add10e14ceb8c187544bfc96}
+      \strng{fullhash}{5a77bfd8add10e14ceb8c187544bfc96}
+      \strng{fullhashraw}{5a77bfd8add10e14ceb8c187544bfc96}
+      \strng{bibnamehash}{5a77bfd8add10e14ceb8c187544bfc96}
+      \strng{authorbibnamehash}{5a77bfd8add10e14ceb8c187544bfc96}
+      \strng{authornamehash}{5a77bfd8add10e14ceb8c187544bfc96}
+      \strng{authorfullhash}{5a77bfd8add10e14ceb8c187544bfc96}
+      \strng{authorfullhashraw}{5a77bfd8add10e14ceb8c187544bfc96}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-10-16}
+      \field{title}{Loads and Stores}
+      \field{year}{Accessed: 2024}
+      \verb{urlraw}
+      \verb https://developer.arm.com/documentation/102374/0102/Loads-and-stores
+      \endverb
+      \verb{url}
+      \verb https://developer.arm.com/documentation/102374/0102/Loads-and-stores
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
